@@ -1,0 +1,36 @@
+//Bootstrap//
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/bootstrap-grid.min';
+
+
+//Fonts//
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+//Base//
+@import 'base/variables';
+@import 'base/mixins';
+
+
+
+//Global styles//
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+//Blocks//
+@import "blocks/addresses";
+@import "blocks/buttons";
+@import "blocks/promo";
+@import "blocks/menu";
+
+
+
+
+
+//Media//
+@import "base/media";

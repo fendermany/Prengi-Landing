@@ -1,0 +1,30 @@
+.addresses{
+    padding: 20px 0;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(170px, max-content));
+        grid-auto-rows: minmax(50px, auto);
+        justify-content: space-between;
+        column-gap: 33px;
+    }
+    &__item{
+        display: grid;
+        grid-template-columns: 28px minmax(max-content, max-content);
+        grid-template-rows: minmax(50px, auto);
+        column-gap: 12px;
+        img{
+            grid-column: 1/2;
+        }
+        &-text{
+            grid-column: 2/3;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 18px;
+            text-align: left;
+            h3{
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+    }
+}
