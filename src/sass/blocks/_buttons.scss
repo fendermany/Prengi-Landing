@@ -10,4 +10,7 @@
     text-transform: uppercase;
     margin: 0 auto;
     border: none;
+    &:hover{
+        color: red;
+    }
 }

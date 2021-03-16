@@ -14,6 +14,9 @@
         column-gap: 12px;
         img{
             grid-column: 1/2;
+            width: 28px;
+            height: 21px;
+            object-fit: cover;
         }
         &-text{
             grid-column: 2/3;

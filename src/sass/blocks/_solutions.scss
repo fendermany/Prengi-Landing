@@ -1,0 +1,91 @@
+.solutions{
+    height: 890px;
+    background: url('../../img/solutions_background.png') no-repeat 100%/cover;
+    padding: 80px 0 60px 0;
+    &.lazy{
+        background-image: none;
+        background-color: #F1F1FA;
+    }
+    .carousel{
+        margin-top: 125px;
+        position: relative;
+        svg{
+            width: 5em;
+            height: 5em;
+        }
+        &-item{
+            transition: transform 2s ease, opacity .5s ease-out;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-inner{
+            margin: 0 auto;
+            width: 947px;
+            height: 560px;
+            position: relative;
+        }
+        &-indicators{
+            position: absolute;
+            top: -90px;
+            margin: 0 auto;
+            width: 843px;
+            height: 65px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            li{
+                display: inline-block;
+                align-self: center;
+                padding: 0 25px;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 25.99px;
+                position: relative;
+                transition: all 1.5s;
+                &.active{
+                    color: #00c2f0;
+                }
+                &:after{
+                    content: '';
+                    background-color: #fff;
+                    position: absolute;
+                    top: -12px;
+                    right: 0;
+                    display: inline-block;
+                    width: 1px;
+                    height: 50px;
+                    opacity: 0.2;
+                }
+                &:last-child{
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+        &-control{
+            
+            &-prev{
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: calc(50% - 550px);
+                // transform: translateX(-50%);
+            }
+            &-next{
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: calc(50% - 550px);
+            }
+        }
+    }
+
+}

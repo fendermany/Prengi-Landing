@@ -4,6 +4,11 @@
             column-gap: 15px;
         }
     }
+    .advantages{
+        &__item{
+            width: 350px;
+        }
+    }
 }
 
 @media (max-width: 1199.98px) {
@@ -12,6 +17,76 @@
             grid-template-columns: repeat(3, minmax(170px, max-content));
             justify-content: space-between;
             row-gap: 22px;
+        }
+    }
+    .advantages{
+        &__item{
+            width: 295px;
+            padding: 165px 25px 40px 25px;
+        }
+    }
+    .solutions{
+        .carousel{
+            &-control{
+                &-prev{
+                    left: calc(50% - 490px);
+                }
+                &-next{
+                    right: calc(50% - 490px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .promo{
+        &__phones{
+            display: none;
+        }
+        &__menu{
+            width: 500px;
+        }
+    }
+    .advantages{
+        &__item{
+            width: 215px;
+            padding: 165px 10px 40px 10px;
+            h3{
+                font-size: 15px;
+            }
+        }
+    }
+    .solutions{
+        height: 770px;
+        .carousel{
+            margin-top: 155px;
+            &-inner{
+                width: 700px;
+                height: 410px;
+            }
+            &-indicators{
+                width: 685px;
+                li{
+                    padding: 0 14px;
+                }
+            }
+            &-control{
+                &-prev{
+                    left: calc(50% - 370px);
+                }
+                &-next{
+                    right: calc(50% - 370px);
+                }
+            }
+        }
+    }
+    .excellence{
+        &__item{
+            &-title{
+                width: 70%;
+                right: 15%;
+            }
         }
     }
 }
@@ -32,6 +107,57 @@
         .hamburger{
             visibility: visible;
         }
+        &__title{
+            width: 540px;
+        }
+    }
+    .advantages{
+        &__item{
+            width: 155px;
+            padding: 165px 5px 40px 5px;
+            h3{
+                font-size: 11px;
+            }
+        }
+    }
+    .solutions{
+        height: 650px;
+        &__title{
+            font-size: 24px;
+        }
+        .carousel{
+            &-inner{
+                width: 510px;
+                height: 310px;
+            }
+            &-indicators{
+                height: 50px;
+                width: 505px;
+                li{
+                    padding: 0 10px;
+                    font-size: 10px;
+                    &:after{
+                        height: 40px;
+                        top: -8px;
+
+                    }
+                }
+            }
+            &-control{
+                &-prev{
+                    left: calc(50% - 290px);
+                }
+                &-next{
+                    right: calc(50% - 290px);
+                }
+            }
+        }
+    }
+    .excellence{
+        &__wrapper{
+            grid-template-columns: repeat(auto-fit, 510px);
+            row-gap: 15px;
+        }
     }
 }
 
@@ -39,6 +165,78 @@
     .menu{
         &__block{
             width: 70%;
+        }
+    }
+    .promo{
+        &__title{
+            width: 300px;
+            font-size: 38px;
+            margin-top: 35px;
+        }
+        &__subtitle{
+            width: 250px;
+            font-size: 21px;
+        }
+    }
+    .advantages{
+        padding: 40px 0;
+        &__item{
+            width: 296px;
+            padding: 176px 30px 40px 30px;
+            h3{
+                font-size: 15px;
+            }
+        }
+        .row{
+            flex-wrap: wrap;
+        }
+    }
+    .solutions{
+        height: 600px;
+        .carousel{
+            svg{
+                width: 3em;
+                height: 3em;
+            }
+            &-inner{
+                width: 260px;
+                height: 150px;
+            }
+            &-indicators{
+                top: -130px;
+                width: 285px;
+                height: 90px;
+                flex-wrap: wrap;
+                li{
+                    &:after{
+                        height: 20px;
+                        top: 2px;
+                    }
+                    &:nth-child(3){
+                        &:after{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            &-control{
+                
+                &-prev{
+                    left: calc(50% - 160px);
+                    width: 50px;
+                    height: 50px;
+                }
+                &-next{
+                    right: calc(50% - 160px);
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+    .excellence{
+        &__wrapper{
+            grid-template-columns: repeat(auto-fit, 445px);
         }
     }
 }
@@ -53,6 +251,11 @@
     .menu{
         &__block{
             width: 80%;
+        }
+    }
+    .excellence{
+        &__wrapper{
+            grid-template-columns: repeat(auto-fit, 290px);
         }
     }
 }
